@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+    <meta charset="UTF-8">
+    <title>Ignacio Bello Urrejola</title>
+    <body>
+        <div class = "main">
+            <h1>Ignacio Bello Urrejola</h1>
+            <p>Major: Engineering in Computer Science in Universidad de los Andes</p>
+            <p>Year of University Enrollment: 2021</p>
+            <p>Link to Github: <a href="https://github.com/1Bello">Github link</a> </p> 
+            <p>Personal Summary: My name is Ignacio Bello, I am 21 years old, studying on Universidad de los Andes. My hobbies are playing the guitar, football, music and videogames</p>
+        </div>
+    </body>
+    <table>
+        <tr>
+            <td>Skill</td>
+            <td>Level</td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>Advance</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>Basic</td>
+        </tr>
+        <tr>
+            <td>HTML/CSS</td>
+            <td>Basic</td>
+        </tr>
+        <tr>
+            <td>Git</td>
+            <td>Basic</td>
+        </tr>
+        <tr>
+          <td>Excel</td>
+          <td>Basic</td>
+        </tr>
+        <tr>
+            <td>SQL</td>
+            <td>Advance</td>
+        </tr>
+        <tr>
+            <td>Ruby</td>
+            <td>Basic</td>
+        </tr>
+        <tr>
+            <td>English</td>
+            <td>Advance</td>
+        </tr>
+        <tr>
+            <td>Spanish</td>
+            <td>Native</td>
+        </tr>
+    </table>
+    <input type="text" id="text-input" placeholder="Enter text">
+    <button onclick="updateSection()">Confirm</button>
+    <div  id="TextResult">
+        <p></p>
+    </div>
+    
+</html>
+
+<script>
+function updateSection(){
+    var text = document.getElementById("text-input").value;
+    var result = document.getElementById("TextResult");
+    result.innerHTML = "<p>"+ text + "</p>";
+}
+</script>
+
+<style>
+table{
+  border: #b2b2b2 1px solid;
+  font-family:'Courier New', Courier, monospace;
+  font-style: normal;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+td, th {
+  border: black 1px solid;
+  font-style: normal;
+}
+.main h1{
+    align-items: center;
+    text-align: center;
+    background-color: rgb(112, 176, 233);
+}
+.main{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(179, 210, 237);
+}
+.main p{
+    align-items: center;
+    text-align: center;
+    background-color: rgb(179, 210, 237);
+}
+button{
+    margin: 0;
+  position: absolute;
+  top: 74%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+input{
+  margin: 0;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#TextResult{
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin-top: 80px;
+}
+</style>
